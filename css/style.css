@@ -1,0 +1,152 @@
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+.hero__text, .hero__title, .hero__button,
+.portfolio__title, .tariffs__title, .about__title,
+.reviews__title, .contact__title {
+  color: #fff;
+}
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.contact__form input, .contact__form textarea {
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+
+.nav-link{
+  color: white;
+}
+
+.head__bg{
+  background: url("../img/hero.jpg") no-repeat center/cover;
+  height: 500px;
+}
+
+.about-me__wrap{
+  display: flex;
+}
+
+
+
+.about-me {
+  background-color: #000; /* тёмный фон */
+}
+.about-me__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-me__text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.about-me__image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+
+.about-me__image{
+  width: 300px;
+  height: 300px;
+}
+
+
+.about-me__image__width{
+  width: 600px;
+  height: 200px;
+}
+
+.about-me__image__width__w {
+  width: 741px;
+  height: 240px;
+}
+
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.portfolio__filter-link.active {
+  border-bottom: 2px solid #fff;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}
+
+
+
+.portfolio__image{
+  width: 660px;
+  height: 530px;
+
+}
+
+.hero__button{
+ background: #000;
+ border-radius: 0px;
+}
+
+.btn-outline-light{
+  background: #000;
+ border-radius: 0px;
+
+}
+
+.reviews__img{
+  width: 250px;
+  height: 300px;
+}
+
+
+.contact__form .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  color: white;
+}
+
+.contact__form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__form .form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+}
+
+
+
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+
+.btn-no-border {
+  border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
