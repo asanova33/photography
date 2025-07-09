@@ -57,13 +57,17 @@
             <h2 class="portfolio__title mb-4">Портфолио</h2>
 
             <!-- Filter Menu -->
-            <div class="portfolio__filters d-flex gap-4 mb-4 border-bottom pb-2">
-                <a href="#" class="portfolio__filter-link active text-white text-decoration-none">Все</a>
-                <a href="#" class="portfolio__filter-link text-white text-decoration-none">Портреты</a>
-                <a href="#" class="portfolio__filter-link text-white text-decoration-none">Бренды</a>
-                <a href="#" class="portfolio__filter-link text-white text-decoration-none">Предметы</a>
-                <a href="#" class="portfolio__filter-link text-white text-decoration-none">Мероприятия </a>
-            </div>
+           <div class="portfolio__filters-wrapper overflow-auto">
+  <div class="portfolio__filters d-flex gap-4 mb-4 border-bottom pb-2 flex-nowrap">
+    <a href="#" class="portfolio__filter-link active text-white text-decoration-none flex-shrink-0">Все</a>
+    <a href="#" class="portfolio__filter-link text-white text-decoration-none flex-shrink-0">Портреты</a>
+    <a href="#" class="portfolio__filter-link text-white text-decoration-none flex-shrink-0">Бренды</a>
+    <a href="#" class="portfolio__filter-link text-white text-decoration-none flex-shrink-0">Предметы</a>
+    <a href="#" class="portfolio__filter-link text-white text-decoration-none flex-shrink-0">Мероприятия</a>
+  </div>
+</div>
+
+
 
             <!-- Gallery Grid -->
             <div class="row g-3 portfolio__gallery">
@@ -153,13 +157,13 @@
             </p>
           </div>
           <div class="col-md-6 about-me__item">
-            <img src="./img/девушка.jpeg" alt="портрет" class="about-me__image img-fluid rounded shadow">
+            <img src="./img/девушка.jpeg" alt="портрет" class="about-me__image img-fluid  shadow">
           </div>
         </div>
 
         <!-- Широкая нижняя фотка -->
         <div class="mt-4">
-          <img src="./img/архетек.jpeg" alt="архитектура" class="about-me__image--wide img-fluid rounded shadow w-100">
+          <img src="./img/архетек.jpeg" alt="архитектура" class="about-me__image--wide img-fluid  shadow w-100">
         </div>
       </div>
     </div>
@@ -169,7 +173,7 @@
       <div class="about-me__block">
         <!-- Сверху: широкая фотка -->
         <div class="mb-4">
-          <img src="./img/архетектура.jpeg" alt="широкая сверху" class="about-me__image--wide img-fluid rounded shadow w-100">
+          <img src="./img/архетектура.jpeg" alt="широкая сверху" class="about-me__image--wide img-fluid  shadow w-100">
         </div>
 
         <!-- Нижняя часть: текст + фото -->
@@ -182,7 +186,7 @@
             </p>
           </div>
           <div class="col-md-6 about-me__item">
-            <img src="./img/Deep MooD.jpeg" alt="портрет 2" class="about-me__image img-fluid rounded shadow">
+            <img src="./img/Deep MooD.jpeg" alt="портрет 2" class="about-me__image img-fluid  shadow">
           </div>
         </div>
       </div>
@@ -242,23 +246,24 @@
         let currentIndex = 0;
       
         function renderReview(index) {
-          const review = reviews[index];
-          const container = document.getElementById("review-container");
-      
-          container.innerHTML = `
-            <div class="col-md-6 reviews__item">
-              <p>
-                ${review.text}<br>
-                — <strong>${review.author}</strong>
-              </p>
-            </div>
-            <div class="col-md-6 d-flex gap-3 justify-content-center">
-              ${review.photos.map(photo => `
-                <img src="${photo}" alt="Фото" class="reviews__img img-fluid ">
-              `).join('')}
-            </div>
-          `;
-        }
+  const review = reviews[index];
+  const container = document.getElementById("review-container");
+
+  container.innerHTML = `
+    <div class="col-12 col-lg-6 mb-4 reviews__item">
+      <p class="reviews__text">
+        ${review.text}<br>
+        — <strong>${review.author}</strong>
+      </p>
+    </div>
+    <div class="col-12 col-lg-6 mb-4 d-flex flex-wrap justify-content-center gap-3 reviews__images">
+      ${review.photos.map(photo => `
+        <img src="${photo}" alt="Фото" class="reviews__img img-fluid shadow" style="max-width: 48%; height: auto;">
+      `).join('')}
+    </div>
+  `;
+}
+
       
         function prevReview() {
           currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
