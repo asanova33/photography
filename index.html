@@ -135,45 +135,64 @@
     </section>
 
     <!-- Обо мне -->
-    <section class="about-me container py-5">
-        <h2 class="about-me__title text-white mb-4">Обо мне</h2>
+<section class="about-me container py-5">
+  <h2 class="about-me__title text-white mb-5 text-center">Обо мне</h2>
 
-        <div class="row about-me__cards">
-            <div class=" col-md-6 about-me__card">
-                <div class=" about-me__wrap ">
-
-                    <p class="  about-me__text text-white mb-4">
-                        Привет! Меня зовут Лика. Я&nbsp;фотограф с&nbsp;опытом более 5&nbsp;лет.
-                        Специализируюсь на&nbsp;портретной и&nbsp;репортажной съёмке.
-                        Мне нравится ловить искренние эмоции и&nbsp;создавать атмосферные кадры,
-                        которые будут радовать вас долгие годы.
-
-                        В&nbsp;каждой съёмке я&nbsp;стараюсь раскрыть индивидуальность человека,
-                        показать его настоящим. 
-                    </p>
-                    <img src="./img/девушка.jpeg" alt="Фотография 1" class=" mb-4 about-me__image img-fluid ">
-                </div>
-                <img src="./img/архетек.jpeg" alt="Фотография 1" class="about-me__image__width__w img-fluid ">
-            </div>
-
-            <div class="col-md-6 about-me__card">
-                <img src="./img/архетектура.jpeg" alt="Фотография 1" class=" about-me__image__width img-fluid ">
-                <div class=" about-me__wrap ">
-                    <p class=" about-me__text text-white mt-4">
-                        В&nbsp;арсенале большая коллекция реквизита и&nbsp;локаций,
-                        которые помогут создать уникальную историю.
-                        Работаю по&nbsp;всему городу, возможен выезд за&nbsp;пределы.
-
-                        Буду рада стать вашим проводником в&nbsp;мир красивых и&nbsp;живых фотографий.
-                        Открыта к&nbsp;новым идеям и&nbsp;творческим проектам.В каждой съёмке я стараюсь раскрыть
-                        индивидуальность человека, показать его настоящим. 
-                    </p>
-                    <img src="./img/Deep MooD.jpeg" alt="Фотография 1" class="  mt-4 about-me__image img-fluid ">
-                </div>
-            </div>
+  <div class="row g-5">
+    <!-- БЛОК 1 -->
+    <div class="col-lg-6">
+      <div class="about-me__block">
+        <!-- Верхняя часть: текст + фото -->
+        <div class="row g-3 align-items-start">
+          <div class="col-md-6 about-me__item">
+            <p class="about-me__text text-white">
+              Привет! Меня зовут Лика. Я фотограф с опытом более 5 лет.
+              Специализируюсь на портретной и репортажной съёмке. Мне нравится ловить искренние эмоции
+              и создавать атмосферные кадры, которые будут радовать вас долгие годы.
+              В каждой съёмке я стараюсь раскрыть индивидуальность человека, показать его настоящим.
+            </p>
+          </div>
+          <div class="col-md-6 about-me__item">
+            <img src="./img/девушка.jpeg" alt="портрет" class="about-me__image img-fluid rounded shadow">
+          </div>
         </div>
 
-    </section>
+        <!-- Широкая нижняя фотка -->
+        <div class="mt-4">
+          <img src="./img/архетек.jpeg" alt="архитектура" class="about-me__image--wide img-fluid rounded shadow w-100">
+        </div>
+      </div>
+    </div>
+
+    <!-- БЛОК 2 -->
+    <div class="col-lg-6">
+      <div class="about-me__block">
+        <!-- Сверху: широкая фотка -->
+        <div class="mb-4">
+          <img src="./img/архетектура.jpeg" alt="широкая сверху" class="about-me__image--wide img-fluid rounded shadow w-100">
+        </div>
+
+        <!-- Нижняя часть: текст + фото -->
+        <div class="row g-3 align-items-start">
+          <div class="col-md-6 about-me__item">
+            <p class="about-me__text text-white">
+              В арсенале большая коллекция реквизита и локаций, которые помогут создать уникальную историю.
+              Работаю по всему городу, возможен выезд за пределы. Буду рада стать вашим проводником
+              в мир красивых и живых фотографий. Открыта к новым идеям и творческим проектам.
+            </p>
+          </div>
+          <div class="col-md-6 about-me__item">
+            <img src="./img/Deep MooD.jpeg" alt="портрет 2" class="about-me__image img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
     <!-- Отзывы -->
